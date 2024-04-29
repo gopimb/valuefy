@@ -1,7 +1,5 @@
 package TestCases;
 
-import java.sql.Date;
-import java.text.SimpleDateFormat;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -17,7 +15,6 @@ public class SignUpPageTest {
 
 	private WebDriver driver;
 	private BasePage basePage;
-	private Page_Class.SignUpPage SignUpPage;
 
 	public SignUpPageTest() {
 		// Initialize BasePage

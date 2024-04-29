@@ -15,7 +15,6 @@ public class LoginPageTest extends BasePage {
 
 	private WebDriver driver;
 	private BasePage basePage;
-	private Page_Class.SignUpPage SignUpPage;
 
 	public LoginPageTest() {
 		// Initialize BasePage

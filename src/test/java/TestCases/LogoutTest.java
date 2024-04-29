@@ -1,6 +1,5 @@
 package TestCases;
 
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,8 +14,6 @@ public class LogoutTest {
 
 	private WebDriver driver;
 	private BasePage basePage;
-	private Page_Class.SignUpPage SignUpPage;
-	private LoginPageTest LoginPageTest;
 
 	public LogoutTest() {
 		// Initialize BasePage
