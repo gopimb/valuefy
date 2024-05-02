@@ -16,6 +16,9 @@ public class BasePage {
 
 		String chromedriverPath = System.getProperty("user.dir")+"/src/main/resources/chromedriver.exe";        
 		// Set the system property
+	System.out.println("chrome");
+	System.out.println(chromedriverPath);
+		
 		System.setProperty("webdriver.chrome.driver", chromedriverPath);
 		this.driver = new ChromeDriver();
 		System.out.println("End of Base Page!!!");
