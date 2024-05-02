@@ -16,6 +16,7 @@ public class LoginPageTest extends BasePage {
 	private WebDriver driver;
 	private BasePage basePage;
 
+
 	public LoginPageTest() {
 		// Initialize BasePage
 		this.basePage = new BasePage();
@@ -31,7 +32,7 @@ public class LoginPageTest extends BasePage {
 	
 	 }
 	 
-	@Test(priority = 1)
+	@Test(priority = 1,  groups = {"login"})
 	public void verifySignUpLoginLink() throws InterruptedException
 
 	{
@@ -51,7 +52,7 @@ public class LoginPageTest extends BasePage {
 		}
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = {"login"})
 	public void verifyLoginButton() throws InterruptedException
 
 	{
@@ -67,7 +68,7 @@ public class LoginPageTest extends BasePage {
 		}
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, groups = {"login"})
 	public void verifyLogin() throws InterruptedException {
 
 		/*

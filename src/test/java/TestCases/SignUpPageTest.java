@@ -1,5 +1,6 @@
 package TestCases;
 
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -16,11 +17,14 @@ public class SignUpPageTest {
 	private WebDriver driver;
 	private BasePage basePage;
 
+
 	public SignUpPageTest() {
+		System.out.println("Start of Signup Page :) ");
 		// Initialize BasePage
 		this.basePage = new BasePage();
 		// Initialize WebDriver
 		this.driver = basePage.getDriver();
+		System.out.println("Closing SignUp!");
 
 	}
 
@@ -30,7 +34,7 @@ public class SignUpPageTest {
 		driver.manage().window().maximize();
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1, groups = {"signup"})
 	public void verifyButtonPresent() throws InterruptedException
 
 	{
@@ -56,7 +60,7 @@ public class SignUpPageTest {
 		        }
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = {"signup"})
 	public void verifySignUp() throws InterruptedException
 
 	{
@@ -97,6 +101,7 @@ public class SignUpPageTest {
 	
 	@AfterClass()
 	public void closeBrowser() {
+	
 		driver.close();
 	}
 

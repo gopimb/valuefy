@@ -1,6 +1,7 @@
 package TestCases;
 
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +16,7 @@ public class LogoutTest {
 	private WebDriver driver;
 	private BasePage basePage;
 
+
 	public LogoutTest() {
 		// Initialize BasePage
 		this.basePage = new BasePage();
@@ -28,7 +30,7 @@ public class LogoutTest {
 		driver.manage().window().maximize();
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1,  groups = {"logout", "login"})
 	public void verifyUserLogout() throws InterruptedException{
 		
 		WebElement loginLink =

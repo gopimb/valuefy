@@ -13,12 +13,13 @@
   <properties>
 	<testSuiteFile>testng.xml</testSuiteFile>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <includetag>signup</includetag>
   </properties>
  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
+      <artifactId>junit</artifactId> 
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
@@ -64,6 +65,17 @@
     <artifactId>cucumber-core</artifactId>
     <version>7.16.1</version>
 </dependency> 
+
+<dependency>
+    <groupId>org.apache.maven</groupId>
+    <artifactId>maven-model</artifactId>
+    <version>3.8.2</version> <!-- Or the latest version -->
+</dependency>
+<dependency>
+    <groupId>org.codehaus.plexus</groupId>
+    <artifactId>plexus-utils</artifactId>
+    <version>3.3.0</version> <!-- Or the latest version -->
+</dependency>
     <!-- Add other dependencies as needed -->
 </dependencies>
 

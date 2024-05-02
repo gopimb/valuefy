@@ -4,29 +4,21 @@ import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 public class BasePage {
 
 	protected WebDriver driver;
 
 
 	public BasePage() {
+		
+		System.out.println("Start of Base Page");
 
 		String chromedriverPath = System.getProperty("user.dir")+"/src/main/resources/chromedriver.exe";        
 		// Set the system property
 		System.setProperty("webdriver.chrome.driver", chromedriverPath);
-
-		// Construct the path to Chromedriver executable
-
-		// String chromeDriverPath = System.getProperty("/src/main/resources/chromedriver.exe");
-
-		// // Set Chromedriver path
-
-		// System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-
-		// Initialize ChromeDriver
-
 		this.driver = new ChromeDriver();
-
+		System.out.println("End of Base Page!!!");
 
 	}
 
